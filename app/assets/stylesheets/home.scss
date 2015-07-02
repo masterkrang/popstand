@@ -20,7 +20,7 @@ $gold-color: #E29B1F;
 
 body {
   font-family: $lato !important;
-  background-image: url(/assets/footer_image_newyork.jpg);
+  background-image: url(/images/footer_image_newyork.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
   //background-position: right;
@@ -56,7 +56,7 @@ body {
   text-align: center;
   padding-top: 160px;
   padding-bottom: 160px;
-  background-image: url(/assets/bkg.png);
+  background-image: url(/images/bkg.png);
   margin-top: $header-height;
   margin-bottom: 50px;
   color: white;
@@ -121,7 +121,7 @@ body {
   #col1 {
     &:hover {
       #design_image {
-        background-image: url(/assets/design_ico_hover.png);
+        background-image: url(/images/design_ico_hover.png);
       }
     }
   }
@@ -129,7 +129,7 @@ body {
   #col2 {
     &:hover {
       #development_image {
-        background-image: url(/assets/development_ico_hover.png);
+        background-image: url(/images/development_ico_hover.png);
       }
     }
   }
@@ -137,7 +137,7 @@ body {
   #col3 {
     &:hover {
       #product_image {
-        background-image: url(/assets/product_ico_hover.png);
+        background-image: url(/images/product_ico_hover.png);
       }
     }
   }
@@ -165,27 +165,27 @@ body {
     #design_image {
       width:61px;
       height: 64px;
-      background-image: url(/assets/design_ico.png);
+      background-image: url(/images/design_ico.png);
       &:hover {
-        background-image: url(/assets/design_ico_hover.png);
+        background-image: url(/images/design_ico_hover.png);
       }
     }
 
     #development_image {
       width: 66px;
       height: 64px;
-      background-image: url(/assets/development_ico.png);
+      background-image: url(/images/development_ico.png);
       &:hover {
-        background-image: url(/assets/development_ico_hover.png);
+        background-image: url(/images/development_ico_hover.png);
       }
     }
 
     #product_image {
       width: 55px;
       height: 64px;
-      background-image: url(/assets/product_ico.png);
+      background-image: url(/images/product_ico.png);
       &:hover {
-        background-image: url(/assets/product_ico_hover.png);
+        background-image: url(/images/product_ico_hover.png);
       }
     }
 
