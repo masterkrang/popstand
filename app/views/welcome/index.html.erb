@@ -1,0 +1,103 @@
+<div id="header" class="navbar navbar-default navbar-fixed-top">
+  <div class="row">
+    <div class="col-md-offset-1">
+      <p id="popstand_text">POPSTAND</p>
+    </div>
+    <div id="header_blue_color" class="col-md-4 pull-right"></div>
+    <div id="header_orange_color" class="col-md-1 pull-right"></div>
+  </div>
+</div>
+
+<div id="top_container">
+  <p id="pretitle">WE ARE POPSTAND. WE BUILD</p>
+  <h1 id="title">REALLY AWESOME MVPS</h1>
+  <p id="subtitle">WITH GREAT ATTENTION TO USER EXPERIENCE AND PERFORMANCE</p>
+  <div id="cta" class="btn btn-default">Build Your App</div>
+</div>
+
+<div id="what_we_do" class="container">
+  <p id="do_text">WHAT WE DO</p>
+  <p class="underline">_______</p>
+  <p id="do_subtext">alsjkf kjasdklfj kjas dfklj kjasdfkj kljasdf aksdfjkajskdfjk aksdfjkasdf jjk asdfkj a</p>
+  <div id="" class="row col-md-10 col-md-offset-1 three_col_details">
+    <div id="col1" class="col-md-4 col pull-left">
+      <div id="design_image" class="col_image"></div>
+      <p class="image_title">DESIGN</p>
+      <p class="image_caption">alksjdf ljaskdfj kajsdf kjasl kdfjlk ajsdflkj asdkljf asj kj sdkfjkjfkjdak skdfj kajsdf kj aksjdf j</p>
+    </div>
+    <div id="col2" class="col-md-4 col">
+      <div id="development_image" class="col_image"></div>
+      <p class="image_title">DEVELOPMENT</p>
+      <p class="image_caption">alksjdf ljaskdfj kajsdf kjasl kdfjlk ajsdflkj asdkljf asj kj sdkfjkjfkjdak skdfj kajsdf kj aksjdf j</p>
+    </div>
+    <div id="col3" class="col-md-4 col">
+      <div id="product_image" class="col_image"></div>
+      <p class="image_title">PRODUCT MANAGEMENT</p>
+      <p class="image_caption">alksjdf ljaskdfj kajsdf kjasl kdfjlk ajsdflkj asdkljf asj kj sdkfjkjfkjdak skdfj kajsdf kj aksjdf j</p>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio" class="">
+  <p id="portfolio_header">OUR WORK</p>
+  <p class="underline">_______</p>
+  <div class="">
+    <div id="portfolio_pics">
+      <div class="image_row">
+        <a href="http://bit.ly/popstand-get-tikr" target="_blank" style="background-image:url(/assets/tikr_1.png);" class="image_container col-sm-12 col-md-3">
+        </a>
+        <a href="#" style="background-image:url(/assets/echo_2.png);" class="image_container col-sm-12 col-md-6">
+        </a>
+        <a href="http://bit.ly/popstand-get-hey" target="_blank" style="background-image:url(/assets/hey_3.png);" class="image_container col-sm-12 col-md-3">
+        </a>
+      </div>
+      <div class="image_row">
+        <a href="#" style="background-image:url(/assets/dietitian_4.png);" class="image_container col-sm-12 col-md-3">
+        </a>
+        <a href="http://bit.ly/popstand-topchart" target="_blank" style="background-image:url(/assets/popstand_5.png);" class="image_container col-sm-12 col-md-6">
+        </a>
+        <a href="http://bit.ly/popstand-get-hashy" target="_blank" style="background-image:url(/assets/hashy_6.png);" class="image_container col-sm-12 col-md-3">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="form_container" class="col-md-offset-1">
+  <p>Say hello!</p>
+  <%= form_for(@inquiry) do |f| %>
+    <% if @inquiry.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@inquiry.errors.count, "error") %> prohibited this inquiry from being saved:</h2>
+
+        <ul>
+        <% @inquiry.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.text_field :name, placeholder: "Name" %>
+    </div>
+    <div class="field">
+      <%= f.text_field :email, placeholder: "Email" %>
+    </div>
+    <div class="field">
+      <%= f.text_field :message, placeholder: "Message" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Send Message", id: "submit" %>
+    </div>
+  <% end %>
+
+</div>
+
+<div id="footer" class="">
+    <p id="footer_copy" class="col-md-offset-1">Copyright POPSTAND 2015</p>
+</div>
+
+<!-- <div id="footer_image_container" class="">
+  <img src="" />
+</div> -->
