@@ -10,7 +10,7 @@
 
 <div id="top_container">
   <p id="pretitle">WE ARE POPSTAND. WE BUILD</p>
-  <h1 id="title">REALLY AWESOME MVPS</h1>
+  <h1 id="title">REALLY AWESOME APPS</h1>
   <p id="subtitle">WITH GREAT ATTENTION TO USER EXPERIENCE AND PERFORMANCE</p>
   <div id="cta" class="btn btn-default">Build Your App</div>
 </div>
@@ -65,7 +65,7 @@
 
 <div id="form_container" class="col-md-offset-1">
   <p>Say hello!</p>
-  <%= form_for(@inquiry) do |f| %>
+  <%= form_for(@inquiry, remote: true) do |f| %>
     <% if @inquiry.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@inquiry.errors.count, "error") %> prohibited this inquiry from being saved:</h2>
@@ -101,3 +101,20 @@
 <!-- <div id="footer_image_container" class="">
   <img src="" />
 </div> -->
+
+<div id="thanks_modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Awesome!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for reaching out. We will get back to you ASAP!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cool</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
