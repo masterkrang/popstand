@@ -197,7 +197,7 @@ body {
   text-align: center;
   margin-left: 0px !important;
   margin-right: 0px !important;
-
+  height: 640px;
 
   #portfolio_header {
     text-align: center;
@@ -281,9 +281,23 @@ input[type="text"].focus {
   background-color: white;
   z-index: 100;
   #footer_copy {
+    float: left;
     padding-top: 40px;
     color: $gold-color;
+  }
 
+  #footer_orange_color {
+    float: right;
+    width: 5%;
+    height: 100px;//$header-height;
+    background-color: $orange-color;
+  }
+
+  #footer_blue_color {
+    height: 100px;//$header-height;
+    background-color: $dark-blue;
+    width: 20%;
+    float: right;
   }
 }
 
