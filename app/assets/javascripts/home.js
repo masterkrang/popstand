@@ -11,22 +11,11 @@ $(document).on('page:load', function() {
 
 function homeReady() {
 
-  // $("#submit").click(function(e) {
-  //   e.preventDefault();
-  //   $.ajax({
-  //       type: "POST",
-  //       url: '/inquiries',
-  //       data: data,
-  //       success: function(res) {
-  //         console.log("message sent successfully");
-  //
-  //         // show the success message
-  //
-  //         // clear fields
-  //         $("form input").val("");
-  //       },
-  //       dataType: "json"
-  //     });
-  // });
+  $("#cta").click(function() {
+    $("html, body").animate({ scrollTop: $('#form_container').offset().top }, 1000);
+    $("#inquiry_name").focus();
+  })
+
+
 
 }
