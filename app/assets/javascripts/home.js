@@ -16,6 +16,9 @@ function homeReady() {
     $("#inquiry_name").focus();
   })
 
-
+  $(".image_container").click(function(e){
+      var link = $(this).data("href")
+      window.location = link;
+  });
 
 }
