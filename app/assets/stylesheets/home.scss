@@ -58,7 +58,7 @@ textarea, input { outline: none !important; }
   text-align: center;
   padding-top: 160px;
   padding-bottom: 160px;
-  background-image: url(/images/bkg.png);
+  background-image: asset-url('bkg.png');
   margin-top: $header-height;
   margin-bottom: 50px;
   color: white;
