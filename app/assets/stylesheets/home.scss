@@ -20,7 +20,7 @@ $gold-color: #E29B1F;
 
 body {
   font-family: $lato !important;
-  background-image: url(/images/footer_image_newyork.jpg);
+  background-image: asset-url('footer_image_newyork.jpg');
   background-repeat: no-repeat;
   background-position: right bottom;
   //background-position: right;
@@ -126,7 +126,7 @@ textarea, input { outline: none !important; }
   #col1 {
     &:hover {
       #design_image {
-        background-image: url(/images/design_ico_hover.png);
+        background-image: asset-url('design_ico_hover.png');
       }
     }
   }
@@ -134,7 +134,7 @@ textarea, input { outline: none !important; }
   #col2 {
     &:hover {
       #development_image {
-        background-image: url(/images/development_ico_hover.png);
+        background-image: asset-url('development_ico_hover.png');
       }
     }
   }
@@ -142,7 +142,7 @@ textarea, input { outline: none !important; }
   #col3 {
     &:hover {
       #product_image {
-        background-image: url(/images/product_ico_hover.png);
+        background-image: asset-url('product_ico_hover.png');
       }
     }
   }
@@ -170,27 +170,27 @@ textarea, input { outline: none !important; }
     #design_image {
       width:61px;
       height: 64px;
-      background-image: url(/images/design_ico.png);
+      background-image: asset-url('design_ico.png');
       &:hover {
-        background-image: url(/images/design_ico_hover.png);
+        background-image: asset-url('design_ico_hover.png');
       }
     }
 
     #development_image {
       width: 66px;
       height: 64px;
-      background-image: url(/images/development_ico.png);
+      background-image: asset-url('development_ico.png');
       &:hover {
-        background-image: url(/images/development_ico_hover.png);
+        background-image: asset-url('development_ico_hover.png');
       }
     }
 
     #product_image {
       width: 55px;
       height: 64px;
-      background-image: url(/images/product_ico.png);
+      background-image: asset-url('product_ico.png');
       &:hover {
-        background-image: url(/images/product_ico_hover.png);
+        background-image: asset-url('product_ico_hover.png');
       }
     }
 
@@ -215,6 +215,30 @@ textarea, input { outline: none !important; }
   #portfolio_pics {
     .image_row {
       .image_container {
+
+        &.topchart {
+          background-image:asset-url('popstand_5.png');
+        }
+
+        &.hey {
+          background-image:asset-url('hey_3.png');
+        }
+
+        &.tikr {
+          background-image:asset-url('tikr_1.png');
+        }
+
+        &.echo {
+          background-image:asset-url('echo_2.png');
+        }
+
+        &.dietition {
+          background-image:asset-url('dietitian_4.png');
+        }
+
+        &.hashy {
+          background-image:asset-url('hashy_6.png');
+        }
 
         &:hover {
           opacity: 0.5;
